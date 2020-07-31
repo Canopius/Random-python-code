@@ -25,7 +25,6 @@ def Main():
     with open("QuestionDump.csv") as QD:
         QD = csv.reader(QD, delimiter=',')
         for row in QD:
-            print(row)
             QuestionObjects.append(QuestionObject(row[0], row[1]))
 
         NoQuestions = int(input("How many questions would you like to go through? "))
