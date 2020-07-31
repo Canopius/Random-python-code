@@ -46,7 +46,7 @@ def Main():
         if Correct == 0 :
             print("Out of " + str(NoQuestions) + " questions you got " + str(Correct) + " right and " + str(Wrong) + " wrong\n0 %") # Prevent division by 0 err
         else:
-            print("Out of " + str(NoQuestions) + " questions you got " + str(Correct) + " right and " + str(Wrong) + " wrong\n" + (NoQuestions/Correct)*100 + " %")
+            print("Out of " + str(NoQuestions) + " questions you got " + str(Correct) + " right and " + str(Wrong) + " wrong\n" + str((Correct/NoQuestions)*100) + " %")
 try:
     Main()
 except:
